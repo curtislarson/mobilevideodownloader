@@ -1,2 +1,14 @@
 <template name="downloader">
+  <div class="container">
+    {{#autoForm schema=downloadSchema id="downloadForm" type="normal" preserveForm=false}}
+    <div class="row">
+      <div class="col-md-6 col-xs-8 col-md-offset-2">
+        {{> afQuickField id="searchTerm" name="searchTerm"}}
+      </div>
+      <div class="col-md-2 col-xs-4">
+        <button type="submit" class="btn red-button download-button">Download</button>
+      </div>
+    </div>
+    {{/autoForm}}
+  </div>
 </template>
