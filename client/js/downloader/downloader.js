@@ -8,10 +8,10 @@ AutoForm.addHooks("downloadForm", {
   onSubmit: function(insertDoc, updateDoc, currentDoc) {
     check(insertDoc, AutoFormSchemas.Download);
     console.log(insertDoc);
-    var that = this;
+    var url = insertDoc.searchTerm;
+    Router.go("/download?url=" + encodeURIComponent(url));
     this.done();
     return false;
-
   },
 
   onSuccess: function(formType, result) {
