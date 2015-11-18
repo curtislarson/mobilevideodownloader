@@ -1,0 +1,108 @@
+body, html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+
+/* MARGINS */
+
+@media (max-width: 992px) {
+  .small-margin {
+    margin-top: 15px;
+  }
+
+  .medium-margin {
+    margin-top: 25px;
+  }
+
+  .large-margin {
+    margin-top: 50px;
+  }
+
+  .large-bottom-margin {
+    margin-bottom: 50px;
+  }
+
+  .label-margin {
+    margin-top: 5px;
+  }
+}
+.small-margin {
+  margin-top: 30px;
+}
+
+.medium-margin {
+  margin-top: 50px;
+}
+
+.large-margin {
+  margin-top: 100px;
+}
+
+.large-bottom-margin {
+  margin-bottom: 100px;
+}
+
+.label-margin {
+  margin-top: 5px;
+}
+
+/* TEXT */
+
+.center-text {
+  text-align: center;
+}
+
+.left-text {
+  text-align: left;
+}
+
+.red {
+  color: #DC2725;
+}
+
+.green {
+  color: #25DC5D;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* BUTTONS */
+
+.red-button {
+  background-color: #DC2725;
+  color: #FFF;
+  width: 100%;
+}
+
+.red-button:hover {
+  background-color: #c62220;
+  color: #FFF;
+  width: 100%;
+}
+
+.green-button {
+  background-color: #25DC5D;
+  color: #FFF;
+  width: 100%;
+}
+
+.green-button:hover {
+  background-color: #008F2C;
+  color: #FFF;
+  width: 100%;
+}
+
+.blue-button {
+  background-color: #0C69A9;
+  color: #FFF;
+  width: 100%;
+}
+
+.blue-button:hover {
+  background-color: #115C8F;
+  color: #FFF;
+  width: 100%;
+}
