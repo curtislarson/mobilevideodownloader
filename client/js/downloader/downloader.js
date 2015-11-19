@@ -11,6 +11,10 @@ Template.downloader.onCreated(function() {
   YouTubeSearch = new SearchSource("youtube", fields, options);
 });
 
+Template.downloader.onRendered(function() {
+  Adsense.addBottomBarCode();
+})
+
 Template.downloader.events({
   "keyup #searchTerm": _.throttle(function(event) {
     var val = $(event.currentTarget).val();

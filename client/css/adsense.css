@@ -1,0 +1,19 @@
+@media (max-width: 992px) {
+  .adsense-top-row {
+    height: 45px;
+  }
+
+  .adsense-bottom-row {
+    height: 45px;
+  }
+}
+
+@media (min-width: 992px) {
+  .adsense-top-row {
+    height: 90px;
+  }
+
+  .adsense-bottom-row {
+    height: 90px;
+  }
+}

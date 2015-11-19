@@ -33,6 +33,11 @@ Router.route("/youtube", {
 Router.route("/top-video-downloads", {
   name: "topVideoDownloads",
   layoutTemplate: "mainLayout",
+  waitOn: function() {
+    return [
+      Meteor.subscribe("topDownloads")
+    ];
+  },
   action: function() {
     this.render("topVideoDownloads");
   }
