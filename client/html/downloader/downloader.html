@@ -3,12 +3,34 @@
     {{#autoForm schema=downloadSchema id="downloadForm" type="normal" preserveForm=false}}
     <div class="row">
       <div class="col-md-6 col-xs-8 col-md-offset-2">
-        {{> afQuickField id="searchTerm" name="searchTerm"}}
+        <div class="form-group {{#if afFieldIsInvalid name='searchTerm'}}has-error{{/if}}">
+          {{> afFieldInput id="searchTerm" name="searchTerm" class="form-control" autocomplete="off"}}
+          {{#if showResults}}
+          {{#with searchResults}}
+            {{> downloader_autocomplete this}}
+          {{/with}}
+          {{/if}}
+          {{#if afFieldIsInvalid name='searchTerm'}}
+          <span class="help-block">{{{afFieldMessage name='searchTerm'}}}</span>
+          {{/if}}
+        </div>
       </div>
       <div class="col-md-2 col-xs-4">
         <button type="submit" class="btn red-button download-button">Download</button>
       </div>
     </div>
     {{/autoForm}}
+  </div>
+</template>
+
+<template name="downloader_autocomplete">
+  <div class="autocomplete-container">
+    <ul class="autocomplete-list">
+      {{#each this}}
+      <li class="autocomplete-item">
+        {{snippet.title}}
+      </li>
+      {{/each}}
+    </ul>
   </div>
 </template>

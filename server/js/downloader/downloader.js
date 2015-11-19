@@ -9,6 +9,7 @@ Router.route("/download", function() {
   }
 
   var urlId = downloadUrl.split("v")[1];
+  Meteor.call("insertDownload", urlId);
 
   var that = this;
   try {
