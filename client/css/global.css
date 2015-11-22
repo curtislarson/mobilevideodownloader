@@ -72,12 +72,26 @@ body, html {
   .btn-social {
     padding-left: 0px;
   }
+  .truncate {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
 }
 
 @media (min-width: 992px) {
   label {
     font-size: 16px;
     font-weight: 400;
+  }
+  .truncate {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
   }
 }
 

@@ -12,3 +12,8 @@ Template.topVideoDownloads.helpers({
     });
   }
 });
+
+Template.topDownload.onRendered(function() {
+  var width = $(".download-container").width();
+  $(".truncate").width(width);
+});
