@@ -9,4 +9,3 @@ Download videos from YouTube, optimized for your mobile device
 
 - Sharing?
 - "Downloading" spinner
-- Fix unknown ytdl crash
